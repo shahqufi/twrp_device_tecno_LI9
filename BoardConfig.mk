@@ -150,15 +150,12 @@ TARGET_SCREEN_DENSITY := 480
 TW_EXTRA_LANGUAGES            := true
 TARGET_USES_MKE2FS            := true
 
-TW_FRAMERATE          := 90
+TW_FRAMERATE          := 60
 TW_BRIGHTNESS_PATH    := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS     := 511
-TW_DEFAULT_BRIGHTNESS := 255
+TW_MAX_BRIGHTNESS     := 255
+TW_DEFAULT_BRIGHTNESS := 90
 TW_NO_SCREEN_BLANK    := true
 TARGET_LD_SHIM_LIBS := libminuitwrp
-TW_LOAD_VENDOR_MODULES := focaltech_ft3683g.ko
-TW_LOAD_VENDOR_MODULES := fs3xxx_haptic.ko
-
 
 # Tools
 TW_INCLUDE_FB2PNG       := true
@@ -190,6 +187,12 @@ TW_USB_STORAGE := true
 
 #MTP
 TW_HAS_MTP := true
+TW_MTP_DEVICE := "/dev/usb-ffs/mtp"
+TW_INCLUDE_LIBUSB := true
+
+#VIBRA
+TW_HAS_VIBRATION := true
+TW_NO_HAPTICS := false
 
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE     := true
