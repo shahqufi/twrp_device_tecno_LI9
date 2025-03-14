@@ -187,8 +187,9 @@ TW_MTP_DEVICE := "/dev/usb-ffs/mtp"
 TW_INCLUDE_LIBUSB := true
 
 #VIBRA
-TW_HAS_VIBRATION := true
-TW_NO_HAPTICS := false
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "android.hardware.vibrator.IVibrator/default"
 
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE     := true
