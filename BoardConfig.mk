@@ -81,7 +81,7 @@ BOARD_HAS_LARGE_FILESYSTEM                    := true
 BOARD_SUPER_PARTITION_SIZE                    := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS                  := tecno_dynamic_partitions
 BOARD_TECNO_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product system_ext
-BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE           := 9122611200 # TODO: Fix hardcoded value
+BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE           := 9122611200 
 
 # Partitions - file type
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE     := erofs
