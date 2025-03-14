@@ -151,7 +151,7 @@ TW_BRIGHTNESS_PATH    := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS     := 255
 TW_DEFAULT_BRIGHTNESS := 90
 TW_NO_SCREEN_BLANK    := true
-TARGET_LD_SHIM_LIBS := libminuitwrp
+#TARGET_LD_SHIM_LIBS := libminuitwrp
 
 # Tools
 TW_INCLUDE_FB2PNG       := true
@@ -193,10 +193,6 @@ TW_NO_HAPTICS := false
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE     := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-
-# Init
-TARGET_INIT_VENDOR_LIB         := libinit_LI9
-TARGET_RECOVERY_DEVICE_MODULES := libinit_LI9
 
 # Vendor Modules
 TW_LOAD_VENDOR_BOOT_MODULES := true
