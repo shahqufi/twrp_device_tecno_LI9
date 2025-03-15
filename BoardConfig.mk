@@ -146,11 +146,12 @@ TARGET_SCREEN_DENSITY := 480
 TW_EXTRA_LANGUAGES            := true
 TARGET_USES_MKE2FS            := true
 
-TW_CUSTOM_CPU_TEMP_PATH := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone0/temp"
+
 TW_FRAMERATE          := 60
 TW_BRIGHTNESS_PATH    := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS     := 255
-TW_DEFAULT_BRIGHTNESS := 90
+TW_MAX_BRIGHTNESS     := 150
+TW_DEFAULT_BRIGHTNESS := 60
 TW_NO_SCREEN_BLANK    := true
 #TARGET_LD_SHIM_LIBS := libminuitwrp
 
@@ -187,22 +188,17 @@ TW_HAS_MTP := true
 TW_MTP_DEVICE := "/dev/usb-ffs/mtp"
 TW_INCLUDE_LIBUSB := true
 
-#VIBRA
-TW_SUPPORT_INPUT_AIDL_HAPTICS := true
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "android.hardware.vibrator.IVibrator/default"
-
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE     := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Init
- TARGET_INIT_VENDOR_LIB         := libinit_LI9
- TARGET_RECOVERY_DEVICE_MODULES := libinit_LI9
+TARGET_INIT_VENDOR_LIB         := libinit_LI9
+TARGET_RECOVERY_DEVICE_MODULES := libinit_LI9
 
 # Vendor Modules
 TW_LOAD_VENDOR_BOOT_MODULES := true
 
 # Version
-TW_DEVICE_VERSION := Shah_qufi | LI9
+TW_DEVICE_VERSION := Shah_qufi
 
