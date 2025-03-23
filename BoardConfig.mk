@@ -78,8 +78,8 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE         := 67108864
 BOARD_HAS_LARGE_FILESYSTEM                    := true
 BOARD_SUPER_PARTITION_SIZE                    := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS                  := mtk_dynamic_partitions
-BOARD_TECNO_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
-BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE           := 9122611200 
+BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
+BOARD_MTK_DYNAMIC_PARTITIONS_SIZE           := 9122611200 
 
 # Partitions - file type
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE     := erofs
