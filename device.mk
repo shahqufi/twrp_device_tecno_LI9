@@ -46,33 +46,27 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Bootctrl
 PRODUCT_PACKAGES += \
-    create_pl_dev \
-    create_pl_dev.recovery
-
-# Boot control HAL
-PRODUCT_PACKAGES += \
-    com.android.hardware.boot \
-    android.hardware.boot-service.default_recovery
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
      bootctrl 
 
-# FastbootD
+# Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
-# DRM
+# Drm
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.mediatek \
-    android.hardware.health-service.mediatek-recovery \
-    charger_res_images_vendor
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 # Keymaster
 PRODUCT_PACKAGES += \
